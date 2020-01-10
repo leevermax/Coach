@@ -1,6 +1,7 @@
 use coach360;
+use coach360;
 CREATE TABLE `users` (
-    `id` int(10) NOT NULL auto_increment,
+    `id` int(10) NOT NULL auto_increment PRIMARY KEY,
     `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
     `email` varchar(55) NOT NULL,    
     `password` varchar(40) NOT NULL,
@@ -13,8 +14,8 @@ CREATE TABLE `users` (
     `question_number` int(5) DEFAULT 0,
     `avatar` text COLLATE utf8_unicode_ci,
     `securi_code` varchar(8) DEFAULT "TIPOCHO",
-    `status` int(1),    
-    PRIMARY KEY (`id`)
+    `is_admin` int(1) DEFAULT 0,
+    `status` int(1)
 )
 
 CREATE TABLE `provincese` (
