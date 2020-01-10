@@ -1,5 +1,4 @@
 use coach360;
-use coach360;
 CREATE TABLE `users` (
     `id` int(10) NOT NULL auto_increment PRIMARY KEY,
     `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -35,4 +34,10 @@ CREATE TABLE `questions` (
     `title` nvarchar(255),    
     `content` longtext COLLATE utf8_unicode_ci,
     `status` int(1) DEFAULT 0
+)
+
+CREATE TABLE `reply_questions` (
+    `id` int(10) NOT NULL auto_increment PRIMARY KEY,
+    `question` int(10),  
+    `content` longtext COLLATE utf8_unicode_ci
 )
