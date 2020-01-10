@@ -50,3 +50,20 @@ CREATE TABLE `blog_post` (
     `content` longtext COLLATE utf8_unicode_ci,
     `view` int(10)
 )
+
+CREATE TABLE `videos` (
+    `id` int(10) NOT NULL auto_increment PRIMARY KEY,
+    `blog_post` int(10),
+    `title` nvarchar(255), 
+    `link` text COLLATE utf8_unicode_ci,
+    `content` text COLLATE utf8_unicode_ci
+)
+
+
+CREATE TABLE `images` (
+    `id` int(10) NOT NULL auto_increment PRIMARY KEY,
+    `blog_post` int(10),
+    `title` nvarchar(255), 
+    `link` text COLLATE utf8_unicode_ci,
+    `content` text COLLATE utf8_unicode_ci
+)
