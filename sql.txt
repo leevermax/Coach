@@ -16,3 +16,9 @@ CREATE TABLE `users` (
     `status` int(1),    
     PRIMARY KEY (`id`)
 )
+
+CREATE TABLE `provincese` (
+    `id` int(10) NOT NULL auto_increment,
+    `province_name` nvarchar(255),
+    PRIMARY KEY (`id`)
+)
