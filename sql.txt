@@ -22,3 +22,8 @@ CREATE TABLE `provincese` (
     `province_name` nvarchar(255),
     PRIMARY KEY (`id`)
 )
+
+CREATE TABLE `erorrs` (
+	`id` int(10) PRIMARY KEY NOT NULL auto_increment,
+	`erorr` nvarchar(255)
+)
