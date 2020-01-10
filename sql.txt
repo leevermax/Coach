@@ -41,3 +41,12 @@ CREATE TABLE `reply_questions` (
     `question` int(10),  
     `content` longtext COLLATE utf8_unicode_ci
 )
+
+CREATE TABLE `blog_post` (
+    `id` int(10) NOT NULL auto_increment PRIMARY KEY,
+    `category` int(10),
+    `author` int(10),
+    `title` nvarchar(255), 
+    `content` longtext COLLATE utf8_unicode_ci,
+    `view` int(10)
+)
